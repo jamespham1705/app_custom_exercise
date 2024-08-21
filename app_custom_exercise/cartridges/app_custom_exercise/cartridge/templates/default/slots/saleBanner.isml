@@ -1,0 +1,35 @@
+<iscache type="relative" hour="24" status="on" />
+<isif condition="${slotcontent}">
+    <isscript>
+        var indexProduct = 0;
+    </isscript>
+    <isinclude template="/components/modules" />
+    <div class="row">
+        <isif condition="${slotcontent && slotcontent.imageBanner}">
+            <div class="col-6">
+                <img src="${slotcontent.imageBanner}" alt="">
+            </div>
+        </isif>
+
+        <!-- Additional required wrapper -->
+        <div class="col-6">
+            <isloop items="${slotcontent.content}" var="product" status="loopState">
+                <isobject object="${product}" view="recommendation">
+                    <isif condition="${!product.online || !product.searchable}">
+                        <iscontinue/>
+                    </isif>
+                    <isif condition="${loopState.index >= 1}">
+                        <isbreak/>
+                    </isif>
+                    <!-- Slides -->
+                    <div class="product-items-js">
+                        <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.ID, 'pview', 'tile', 'ratings', false, 'showQuickView', false, 'price', true)}"/>
+                    </div>
+                    <isscript>
+                        indexProduct++;
+                    </isscript>
+                </isobject>
+            </isloop>
+        </div>
+    </div>
+</isif>

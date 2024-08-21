@@ -1,0 +1,40 @@
+<iscache type="relative" hour="24" status="on" />
+<isif condition="${slotcontent}">
+    <isscript>
+        var indexProduct = 0;
+    </isscript>
+    <isinclude template="/components/modules" />
+    <div class="product-recommendation">
+        <isif condition="${slotcontent && slotcontent.calloutMsg}">
+            <div class="callout-msg clearfix">
+                <isprint value="${slotcontent.calloutMsg}" encoding="off" />
+            </div>
+        </isif>
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-container--product-slot">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <isloop items="${slotcontent.content}" var="product" status="loopState">
+                    <isobject object="${product}" view="recommendation">
+                        <isif condition="${!product.online || !product.searchable}">
+                            <iscontinue/>
+                        </isif>
+                        <!-- Slides -->
+                        <div class="swiper-slide has-product-items-js">
+                            <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.ID, 'pview', 'tile', 'ratings', false, 'showQuickView', false, 'price', true)}"/>
+                        </div>
+                        <isscript>
+                            indexProduct++;
+                        </isscript>
+                    </isobject>
+                </isloop>
+            </div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <script>
+        window.productRecomend();
+    </script>
+</isif>

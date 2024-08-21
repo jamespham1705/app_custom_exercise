@@ -1,0 +1,77 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<isset name="DecoratorTemplate" value="common/layout/page" scope="page"/>
+
+<isinclude template="util/modules"/>
+
+<isdecorate template="${DecoratorTemplate}">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets');
+        assets.addCss('/css/saleLandingPage.css');
+        assets.addJs('/js/saleLandingPage.js');
+    </isscript>
+    <isif condition="${pdict.Content != null}">
+        <div id="primary" class="content-landing-sale">
+            <div class="content-landing-sale__header">
+                <img src="${URLUtils.staticURL('/images/sale_banner.jpg')}" alt="sale banner" />
+            </div>
+            <div class="container content-landing-sale__container">
+                <div class="content-landing__limited">
+                    <div class="content-title">
+                        <span class="text-uppercase"><isprint value="${Resource.msg('sale.landing.offer', 'common', null)}" encoding="on" /></span>
+                        <div class="content-countdown">
+                            <div id="countdown-landing-page" class="row text-center text-uppercase">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <isslot id="bundle-product-banner" context="global" description="banner for product bundle" /> 
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <isslot id="gift-banner" context="global" description="banner for gift" />
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <isslot id="discount-product-banner" context="global" description="banner for product discount" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-landing__bundle">
+                    <div class="content-title">
+                        <span class="text-uppercase"><isprint value="${Resource.msg('sale.landing.bundle', 'common', null)}" encoding="on" /></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <isslot id="backpack-banner" context="global" description="banner for backpack" /> 
+                        </div>
+                        <div class="col-12">
+                            <isslot id="travel-banner" context="global" description="banner for travel" />
+                        </div>
+                        <div class="col-12">
+                            <isslot id="ladies-banner" context="global" description="banner for ladies" />
+                        </div>
+                    </div>
+                </div>
+                <div class="content-landing__bag">
+                    <div class="content-title">
+                        <span class="text-uppercase"><isprint value="${Resource.msg('sale.landing.bag', 'common', null)}" encoding="on" /></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <isslot id="backpack-banner" context="global" description="banner for backpack" /> 
+                        </div>
+                        <div class="col-12">
+                            <isslot id="travel-banner" context="global" description="banner for travel" />
+                        </div>
+                    </div>
+                </div>
+                <div class="content-landing__term">
+                    <iscontentasset aid="term" />
+                </div>
+                <div id="content-landing-recommendation" class="content-landing__recommendation">
+                    <isslot id="slot-recommendation" context="global" description="product recommendation" />
+                </div>
+            </div>
+        </div>
+    </isif>
+</isdecorate>
