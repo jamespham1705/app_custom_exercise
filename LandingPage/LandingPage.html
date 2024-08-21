@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header id="header" class="only-desktop">
+			<img src="images/header_desktop.png" alt="">
+		</header>
+
+		<div id="main" class="landing-page">
+
+			<!-- Content slot -->
+			<section class="top-banner">
+				<img src="images/banner_desktop.png" alt="" class="only-desktop">
+				<img src="images/banner_mobile.png" alt=""  class="only-mobile">
+			</section>
+
+			<!-- Content slot  Section Offer -->
+			<section class="landing-page-section landing-page-section-offer">
+				<div class="landing-page-section-title landing-page-section-offer-title">
+					<h3 class="title-style-01">
+						<span>LIMITED TIME OFFER</span>
+					</h3>
+				</div>
+
+				<div class="container landing-page-section-offer-countdown">
+					<div id="countdown"></div>
+				</div>
+
+				<div class="container-fluid landing-page-section-offer-product">
+					<div class="container landing-page-section-offer-product-list">
+						<div class="landing-page-section-offer-product-item">
+							<div class="product-item-top">
+								<img src="images/bundle_sets.png" alt="">
+							</div>
+							<div class="product-item-bottom">
+								<div class="product-item-title">
+									<p>Samsonite</p>
+									<h4>
+										BASE BOOST<br/>
+										SPINNER &<br/>
+										BLAKCE ECO<br/>
+										BACKPACK
+									</h4>
+								</div>
+								<div class="product-item-img">
+									<img src="images/product_1_desktop.png" alt="" >
+								</div>
+								<div class="product-item-price">
+									<span>From</span>
+									<p>$299</p>
+								</div>
+								<button type="button"> 
+									SHOP NOW
+								</button>
+							</div>
+						</div>
+						<div class="landing-page-section-offer-product-item">
+							<div class="product-item-top">
+								<img src="images/gift.png" alt="">
+							</div>
+							<div class="product-item-bottom">
+								<div class="product-item-title">
+									<p>Samsonite</p>
+									<h4>
+										TRAVEL ESSENTIALS<br/>
+										MASK POUCH<br/>
+										FOLDABLE
+									</h4>
+									<p>with every puchase</p>
+								</div>
+								<div class="product-item-img">
+									<img src="images/product_2_desktop.png" alt="" >
+								</div>
+								<button type="button"> 
+									SHOP NOW
+								</button>
+							</div>
+						</div>
+						<div class="landing-page-section-offer-product-item">
+							<div class="product-item-top">
+								<img src="images/additional.png" alt="">
+							</div>
+							<div class="product-item-bottom">
+								
+								<div class="product-item-title">
+									<p>Samsonite</p>
+									<h4>
+										Toiis L Spinner<br/>
+										75/28 Exp
+									</h4>
+								</div>
+								<div class="product-item-img">
+									<img src="images/product_3_desktop.png" alt="" >
+								</div>
+
+								<div class="product-item-price">
+									<span>From</span>
+									<p>$199</p>
+								</div>
+								<button type="button"> 
+									SHOP NOW
+								</button>
+							</div>						
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Content slot Section Bundle -->
+			<section class="landing-page-section landing-page-section-bundle">
+				<div class="landing-page-section-title">
+					<h3 class="title-style-01">
+						<span>BUNDLE DEALS</span>
+					</h3>	
+				</div>
+
+				<!-- Block 1 -->
+				<div class="container landing-page-section-bundle-block1">
+					<div class="landing-page-section-bundle-block1-title">
+						<h3>
+							<sup>11.11 SALES</sup><br/>
+							<span>BUNDLE DEALS</span>
+						</h3>	
+					</div>
+					<div class="landing-page-section-bundle-product">
+						<div class="landing-page-section-bundle-product-list">
+							<div class="landing-page-section-bundle-product-item">
+								<div class="product-item-img">
+									<img src="images/backpack-deals.png" alt="" >
+								</div>
+								<div class="product-item-content">
+									<div>
+										<div class="product-item-title">
+											<p>Samsonite</p>
+											<h4>
+												VANGARDE SPORTS<br/>
+												PACK & WOOJU SMART<br/>
+												SLING
+											</h4>
+										</div>
+										<div class="product-item-price">
+											<span>AT</span>
+											<p>$210</p>
+										</div>
+										<div class="product-item-button">
+											<button type="button"> 
+									SHOP NOW
+								</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="landing-page-section-bundle-product-item">
+								<div class="product-item-img">
+									<img src="images/travel-deals.png" alt="" >
+								</div>
+								<!-- Left content -->
+								<div class="product-item-content left">
+									<div>
+										<div class="product-item-title">
+											<p>Samsonite</p>
+											<h4>
+												VARRO SPINNER 50/20 $<br/>
+												HANGING TOILETRY KIT
+											</h4>
+										</div>
+										<div class="product-item-price">
+											<span>AT</span>
+											<p>$269</p>
+										</div>
+										<div class="product-item-button">
+											<button type="button"> 
+									SHOP NOW
+								</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="landing-page-section-bundle-product-item">
+								<div class="product-item-img">
+									<img src="images/ladies-deals.png" alt="" >
+								</div>
+								<div class="product-item-content">
+									<div>
+										<div class="product-item-title">
+											<p>Samsonite</p>
+											<h4>
+												DRURY BACKPACK &<br/>
+												CROSS
+											</h4>
+										</div>
+										<div class="product-item-price">
+											<span>AT</span>
+											<p>$189</p>
+										</div>
+										<div class="product-item-button">
+											<button type="button"> 
+									SHOP NOW
+								</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Block 2 -->
+				<div class="container landing-page-section-bundle-block2">
+					<div class="landing-page-section-title">
+						<h3 class="title-style-01">
+							<span>BAG & BACKPACKS</span>
+						</h3>	
+					</div>
+					<div class="landing-page-section-bundle-product">
+						<div class="landing-page-section-bundle-product-list">
+							<div class="landing-page-section-bundle-product-item">
+								<div class="product-item-img">
+									<img src="images/for-her.png" alt="" >
+								</div>
+								<div class="product-item-content left">
+									<div>
+										<div class="product-item-title">
+											<p>Samsonite</p>
+											<h4>
+												ZALIA 2.0 BACKPACK 14.1
+											</h4>
+										</div>
+										<div class="product-item-price">
+											<span>AT</span>
+											<p>$169</p>
+										</div>
+										<div class="product-item-button">
+											<button type="button"> 
+									SHOP NOW
+								</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="landing-page-section-bundle-product-item">
+								<div class="product-item-img">
+									<img src="images/for-him.png" alt="" >
+								</div>
+								<div class="product-item-content">
+									<div>
+										<div class="product-item-title">
+											<p>Samsonite</p>
+											<h4>
+												TIMSON BACKPACK
+											</h4>
+										</div>
+										<div class="product-item-price">
+											<span>AT</span>
+											<p>$210</p>
+										</div>
+										<div class="product-item-button">
+											<button type="button"> 
+									SHOP NOW
+								</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+
+			<!-- Content slot Section Term-->
+			<section class="landing-page-section landing-page-section-term">
+				<div class="container">
+					<div class="landing-page-section-term-title">
+						<h3 class="title">
+							TERMS & CONDITIONS
+						</h3>	
+					</div>
+					<div class="landing-page-section-term-content">
+						<ul>
+							<li>- PROMOTION IS VALID ONLINE ONLY ON SAMSONITE.COM.SG UNTIL 11 NOVEMBER 2022 23:59PM, WHILE STOCKS LAST</li>
+							<li>- 11.11 PROMOTION MAY NOT BE APPLIED IN CONJUNCTION WITH OTHER PROMOTION</li>
+							<li>- ADDITIONAL 15% OFF TOTAL BILL IS NOT APPLICABLE FOR EXCLUSIVE BUNDLES SETS & ABOVE 50% OFF SALE ITEMS</li>
+							<li class="ul-li-title">GIFT WITH PURCHASE:</li>
+							<li>- RECEIVE (1) TRAVEL ESSENTIAL FOLDABLE MASK POUCH (WORTH $32) WITH ANY PURCHASE</li>
+							<li>- GIFT WILL BE AUTOMATICALLY REFLECTED IN CART, SUBJECTED TO AVAILABILITY, WHILE STOCKS LAST</li>
+							<li>- ALL SALES ARE FINAL AND NOT VALID FOR EXCHANGES OR REFUNDS</li>
+							<li>- SAMSONITE SINGAPORE RESERVES THE RIGHTS TO CANC</li>
+						</ul>					
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+
+		function countDown() { 
+			// set the date we're counting down to
+			var target_date = new Date('November, 11, 2024').getTime();
+	 
+			// variables for time units
+			var days, hours, minutes, seconds;
+	 
+			// get tag element
+			var countdown = document.getElementById('countdown');
+	 
+			// update the tag with id "countdown" every 1 second
+			setInterval(function () {
+	 
+	    	// find the amount of "seconds" between now and target
+	    	var current_date = new Date().getTime();
+	    	var seconds_left = (target_date - current_date) / 1000;
+	 
+	    	// do some time calculations
+	    	days = parseInt(seconds_left / 86400);
+	    	seconds_left = seconds_left % 86400;
+	     
+	    	hours = parseInt(seconds_left / 3600);
+	    	seconds_left = seconds_left % 3600;
+	     
+	    	minutes = parseInt(seconds_left / 60);
+	    	seconds = parseInt(seconds_left % 60);
+	     
+	    	// format countdown string + set tag value
+	    	countdown.innerHTML = '<div class="days"><label>Day</label><p>' + days +  '</p></div><div class="hours"><label>Hour</label><p>' + hours + ' </p></div><div class="minutes"><label>Minute</label><p>'+ minutes + ' </p></div><div class="seconds"><label>Second</label><p>' + seconds + ' </p></div>';  
+	 
+			}, 1000);
+		}
+
+		function setBgSectionOffer() {
+	        // Set backgroundv
+			var backgroundHeight = $('.landing-page-section-offer-product').height() -  $('.product-item-top').height() + 20;
+			$(".landing-page-section-offer-product").css("background-size", ' 100%' +backgroundHeight+'px ');
+	    }
+	    countDown();
+	    setBgSectionOffer();
+		
+	</script>
+</body>
+</html>	
