@@ -1,0 +1,39 @@
+@import './variables';
+@import './utilities/function';
+
+.content-landing-sale {
+    background-color: $white;
+    .content-landing {
+        .content-title {
+            text-transform: uppercase;
+            background-color: $darkBlue;
+            border-bottom: 1px solid $black;
+            position: relative;
+            box-shadow: 5px 10px $primary;
+        }
+
+        .tittle {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+
+        &__limited {
+            .content-countdown {
+                position: absolute;
+                bottom: -20px;
+                padding: 10px;
+                z-index: 10;
+            }
+        }
+
+        &__term {
+            border: 1px solid $black;
+            padding: 20px 10px;
+        }
+
+        &__recomendation {
+            border: 1px solid $black;
+            padding: 20px 10px;
+        }
+    }
+}
